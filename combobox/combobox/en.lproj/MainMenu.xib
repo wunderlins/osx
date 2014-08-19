@@ -14,6 +14,7 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="combobox" destination="Cj6-TA-26j" id="bkt-sf-9C5"/>
+                <outlet property="mainWindow" destination="QvC-M9-y7g" id="r1S-Rt-tFU"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>

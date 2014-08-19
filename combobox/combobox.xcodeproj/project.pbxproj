@@ -50,7 +50,7 @@
 		DCB24202199FDCEC00F75DD7 /* comboboxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "comboboxTests-Info.plist"; sourceTree = "<group>"; };
 		DCB24204199FDCEC00F75DD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCB24206199FDCEC00F75DD7 /* comboboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = comboboxTests.m; sourceTree = "<group>"; };
-		DCB24210199FE18A00F75DD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DCB24210199FE18A00F75DD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,6 +468,7 @@
 				DCB2420C199FDCEC00F75DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCB2420D199FDCEC00F75DD7 /* Build configuration list for PBXNativeTarget "comboboxTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +477,7 @@
 				DCB2420F199FDCEC00F75DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

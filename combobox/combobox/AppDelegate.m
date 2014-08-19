@@ -44,6 +44,7 @@
     
     NSString *options = NULL;
     NSString *delimiter = NULL;
+    NSString *title = NULL;
     
     /*
     // NSLog(@"Number of arguments: %lu", (unsigned long)arguments.count);
@@ -67,6 +68,7 @@
     
     options = [self getOption:@"--options" :arguments];
     delimiter = [self getOption:@"--delimiter" :arguments];
+    title = [self getOption:@"--title" :arguments];
     
     NSLog(@"options:   %@", options);
     NSLog(@"delimiter: %@", delimiter);
@@ -75,7 +77,12 @@
         exit(1);
     }
     
+    if (title == NULL)
+        title = @"Select ...";
     
+    [self.window setTitle:title];
+    //self.mainWindow.setTitle(title);
+    //[mainWindow setTitle:@"test string"];
     
     NSArray *lines = [options componentsSeparatedByString:delimiter];
     for (NSString *l in lines) // fast enumeration
@@ -121,5 +128,9 @@
 }
 
 - (IBAction)ok:(id)sender {
+    // check which value is selected
+    NSString *selected = [self.combobox stringValue];
+    NSLog(@"selected: %@", selected);
+    exit(0);
 }
 @end

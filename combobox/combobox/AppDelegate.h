@@ -16,5 +16,6 @@
 - (IBAction)cancel:(id)sender;
 - (IBAction)ok:(id)sender;
 @property (weak) IBOutlet NSComboBox *combobox;
+@property (unsafe_unretained) IBOutlet NSWindow *mainWindow;
 
 @end

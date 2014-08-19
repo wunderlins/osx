@@ -73,6 +73,10 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "--title &quot;Window Title&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "--delimiter &apos;,&apos;"
             isEnabled = "YES">
          </CommandLineArgument>
