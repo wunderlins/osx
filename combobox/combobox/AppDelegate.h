@@ -15,5 +15,6 @@
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)ok:(id)sender;
+@property (weak) IBOutlet NSComboBox *combobox;
 
 @end

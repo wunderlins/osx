@@ -75,12 +75,15 @@
         exit(1);
     }
     
+    
+    
     NSArray *lines = [options componentsSeparatedByString:delimiter];
     for (NSString *l in lines) // fast enumeration
     {
         NSLog(@"opt: %@", l);
     }
     
+    [self.combobox addItemsWithObjectValues:lines];
     //[comboSelect addItemsWithObjectValues:lines];
     
     /*
