@@ -10,6 +10,11 @@
 
 @implementation AppDelegate
 
+-(void) usage
+{
+    printf("Usage: combobox --options String --delimiter Char [--title String]\n");
+}
+
 - (NSString *)getOption:(NSString *)search :(NSArray*)arguments
 {
     NSString *result = @"";
@@ -20,14 +25,16 @@
         number = -1;
         return NULL;
     }
-    NSLog(@"opt pos: %ld", (long)number);
+    //NSLog(@"opt pos: %ld", (long)number);
     
     if (number+1 > arglen) {
+        [self usage];
         NSLog(@"Error, argument out of range, aborting.");
         exit(254);
     }
 
     if (number+1 > arglen) {
+        [self usage];
         NSLog(@"Error, argument out of range, aborting.");
         exit(254);
     }
@@ -70,8 +77,8 @@
     delimiter = [self getOption:@"--delimiter" :arguments];
     title = [self getOption:@"--title" :arguments];
     
-    NSLog(@"options:   %@", options);
-    NSLog(@"delimiter: %@", delimiter);
+    //NSLog(@"options:   %@", options);
+    //NSLog(@"delimiter: %@", delimiter);
     if (arguments == NULL || delimiter == NULL){
         NSLog(@"Argument error.");
         exit(1);
@@ -85,10 +92,12 @@
     //[mainWindow setTitle:@"test string"];
     
     NSArray *lines = [options componentsSeparatedByString:delimiter];
+    /*
     for (NSString *l in lines) // fast enumeration
     {
         NSLog(@"opt: %@", l);
     }
+    */
     
     [self.combobox addItemsWithObjectValues:lines];
     //[comboSelect addItemsWithObjectValues:lines];
@@ -130,7 +139,9 @@
 - (IBAction)ok:(id)sender {
     // check which value is selected
     NSString *selected = [self.combobox stringValue];
-    NSLog(@"selected: %@", selected);
+    // NSLog(@"selected: %@", selected);
+    
+    printf("%s\n", [selected UTF8String]);
     exit(0);
 }
 @end
