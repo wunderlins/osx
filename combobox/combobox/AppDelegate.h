@@ -10,7 +10,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-
+@property (readwrite) NSArray *options;
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSComboBox *combobox;
 @property (unsafe_unretained) IBOutlet NSWindow *mainWindow;

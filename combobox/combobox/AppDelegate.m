@@ -44,7 +44,7 @@
     // Insert code here to initialize your application
     NSArray *arguments = [[NSProcessInfo processInfo] arguments];
     
-    NSString *options = NULL;
+    NSString *opts = NULL;
     NSString *delimiter = NULL;
     NSString *title = NULL;
     
@@ -68,7 +68,7 @@
     NSLog(@"options from searched index: %@", options);
     */
     
-    options = [self getOption:@"--options" :arguments];
+    opts = [self getOption:@"--options" :arguments];
     delimiter = [self getOption:@"--delimiter" :arguments];
     title = [self getOption:@"--title" :arguments];
     
@@ -86,7 +86,7 @@
     //self.mainWindow.setTitle(title);
     //[mainWindow setTitle:@"test string"];
     
-    NSArray *lines = [options componentsSeparatedByString:delimiter];
+    self.options = [opts componentsSeparatedByString:delimiter];
     /*
     for (NSString *l in lines) // fast enumeration
     {
@@ -94,7 +94,7 @@
     }
     */
     
-    [self.combobox addItemsWithObjectValues:lines];
+    [self.combobox addItemsWithObjectValues:self.options];
     //[comboSelect addItemsWithObjectValues:lines];
     
     /*
