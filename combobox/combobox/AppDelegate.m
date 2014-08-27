@@ -26,13 +26,8 @@
         return NULL;
     }
     //NSLog(@"opt pos: %ld", (long)number);
-    
-    if (number+1 > arglen) {
-        [self usage];
-        NSLog(@"Error, argument out of range, aborting.");
-        exit(254);
-    }
-
+  
+		// FIXME: do proper bounds checking with proper return value
     if (number+1 > arglen) {
         [self usage];
         NSLog(@"Error, argument out of range, aborting.");
