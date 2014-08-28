@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC93F14719AF14E000159DC4 /* combobox.sdef in Resources */ = {isa = PBXBuildFile; fileRef = DC93F14619AF14E000159DC4 /* combobox.sdef */; };
+		DC93F14A19AF258000159DC4 /* combobox.scpt in Resources */ = {isa = PBXBuildFile; fileRef = DC93F14919AF258000159DC4 /* combobox.scpt */; };
 		DCB241DD199FDCEC00F75DD7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB241DC199FDCEC00F75DD7 /* Cocoa.framework */; };
 		DCB241E7199FDCEC00F75DD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCB241E5199FDCEC00F75DD7 /* InfoPlist.strings */; };
 		DCB241E9199FDCEC00F75DD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB241E8199FDCEC00F75DD7 /* main.m */; };
@@ -31,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC93F14619AF14E000159DC4 /* combobox.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = combobox.sdef; sourceTree = "<group>"; };
+		DC93F14819AF250F00159DC4 /* scriptLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scriptLog.h; sourceTree = "<group>"; };
+		DC93F14919AF258000159DC4 /* combobox.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = combobox.scpt; sourceTree = "<group>"; };
 		DCB241D9199FDCEC00F75DD7 /* combobox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = combobox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB241DC199FDCEC00F75DD7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DCB241DF199FDCEC00F75DD7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -121,6 +126,8 @@
 				DCB241F1199FDCEC00F75DD7 /* MainMenu.xib */,
 				DCB241F4199FDCEC00F75DD7 /* Images.xcassets */,
 				DCB241E3199FDCEC00F75DD7 /* Supporting Files */,
+				DC93F14819AF250F00159DC4 /* scriptLog.h */,
+				DC93F14919AF258000159DC4 /* combobox.scpt */,
 			);
 			path = combobox;
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 		DCB241E3199FDCEC00F75DD7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC93F14619AF14E000159DC4 /* combobox.sdef */,
 				DCB241E4199FDCEC00F75DD7 /* combobox-Info.plist */,
 				DCB241E5199FDCEC00F75DD7 /* InfoPlist.strings */,
 				DCB241E8199FDCEC00F75DD7 /* main.m */,
@@ -231,6 +239,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC93F14A19AF258000159DC4 /* combobox.scpt in Resources */,
+				DC93F14719AF14E000159DC4 /* combobox.sdef in Resources */,
 				DCB241E7199FDCEC00F75DD7 /* InfoPlist.strings in Resources */,
 				DCB241F5199FDCEC00F75DD7 /* Images.xcassets in Resources */,
 				DCB241ED199FDCEC00F75DD7 /* Credits.rtf in Resources */,

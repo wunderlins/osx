@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "scriptLog.h"
 
 @implementation AppDelegate
 
@@ -138,5 +139,18 @@
     
     printf("%s\n", [selected UTF8String]);
     exit(0);
+}
+
+- (NSArray*) opts { // scripting interface to get options
+	return self.options;
+}
+
+- (NSNumber*) ready {
+	
+	/* output to the log */
+	SLOG(@"returning application's ready property");
+	
+	/* return always ready */
+	return [NSNumber numberWithBool:YES];
 }
 @end
