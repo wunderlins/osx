@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DC93F14719AF14E000159DC4 /* combobox.sdef in Resources */ = {isa = PBXBuildFile; fileRef = DC93F14619AF14E000159DC4 /* combobox.sdef */; };
 		DC93F14A19AF258000159DC4 /* combobox.scpt in Resources */ = {isa = PBXBuildFile; fileRef = DC93F14919AF258000159DC4 /* combobox.scpt */; };
+		DC93F14C19AF4A7600159DC4 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC93F14B19AF4A7600159DC4 /* ScriptingBridge.framework */; };
 		DCB241DD199FDCEC00F75DD7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB241DC199FDCEC00F75DD7 /* Cocoa.framework */; };
 		DCB241E7199FDCEC00F75DD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCB241E5199FDCEC00F75DD7 /* InfoPlist.strings */; };
 		DCB241E9199FDCEC00F75DD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB241E8199FDCEC00F75DD7 /* main.m */; };
@@ -36,6 +37,7 @@
 		DC93F14619AF14E000159DC4 /* combobox.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = combobox.sdef; sourceTree = "<group>"; };
 		DC93F14819AF250F00159DC4 /* scriptLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scriptLog.h; sourceTree = "<group>"; };
 		DC93F14919AF258000159DC4 /* combobox.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = combobox.scpt; sourceTree = "<group>"; };
+		DC93F14B19AF4A7600159DC4 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		DCB241D9199FDCEC00F75DD7 /* combobox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = combobox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB241DC199FDCEC00F75DD7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DCB241DF199FDCEC00F75DD7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC93F14C19AF4A7600159DC4 /* ScriptingBridge.framework in Frameworks */,
 				DCB241DD199FDCEC00F75DD7 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +104,7 @@
 		DCB241DB199FDCEC00F75DD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC93F14B19AF4A7600159DC4 /* ScriptingBridge.framework */,
 				DCB241DC199FDCEC00F75DD7 /* Cocoa.framework */,
 				DCB241FB199FDCEC00F75DD7 /* XCTest.framework */,
 				DCB241DE199FDCEC00F75DD7 /* Other Frameworks */,
