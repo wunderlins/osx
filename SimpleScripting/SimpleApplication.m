@@ -51,10 +51,26 @@
 #import "SimpleApplication.h"
 #import "scriptLog.h"
 
+static NSNumber *_num;
+
 @implementation NSApplication (SimpleApplication)
 
+/*
+- (id)init {
+	// Forward to the "designated" initialization method
+	_num = 1;
+	return self;
+}
+*/
 
-	/* kvc method for the 'ready' AppleScript property.
++ (void)initialize {
+	if (self == [NSApplication class]) {
+		// Makes sure this isn't executed more than once
+		_num = 1;
+	}
+}
+
+/* kvc method for the 'ready' AppleScript property.
 	
 	note, since we have defined 'ready' as a read-only property in our
 	scripting definition file, we only implement the getter method
@@ -67,5 +83,19 @@
 		/* return always ready */
 	return [NSNumber numberWithBool:YES];
 }
+
+- (NSNumber*) status {
+	
+	/* output to the log */
+	SLOG(@"returning application's ready property");
+	
+	/* return always ready */
+	return _num;
+}
+
+- (void) setStatus:(NSNumber*)num {
+	_num = num;
+}
+
 
 @end

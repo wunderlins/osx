@@ -75,9 +75,10 @@
 				various accessor methods for our application class.  -->
 			<cocoa class="NSApplication"/>
 
-				<!-- a single read-only property -->
+			<!-- a single read-only property -->
 			<property name="ready" code="Srdy" type="boolean" access="r" description="we're always ready"/>
 				
+			<property name="status" code="Ssta" type="number" access="rw" description="status info"/>
 		</class>
 
 	</suite>

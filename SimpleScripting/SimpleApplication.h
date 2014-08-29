@@ -51,7 +51,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface NSApplication (SimpleApplication)
+@interface NSApplication (SimpleApplication) 
+
+//@property (readwrite) NSNumber *_num;
+
 
 	/* kvc method for the 'ready' AppleScript property.
 	
@@ -59,5 +62,6 @@
 	scripting definition file, we only implement the getter method
 	and have not implemented the setter method 'setReady:'. */
 - (NSNumber*) ready;
+@property NSNumber* status;
 
 @end
