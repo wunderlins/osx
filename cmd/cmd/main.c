@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[])
 {
-
+	printf("Hello C\n");
 	// insert code here...
 	CFShow(CFSTR("Hello, World!\n"));
 	return 0;

@@ -51,14 +51,16 @@
 #import "SimpleApplication.h"
 #import "scriptLog.h"
 
-static NSNumber *_num;
+//static NSNumber *_num;
+static int _num = 0;
 
 @implementation NSApplication (SimpleApplication)
 
 /*
 - (id)init {
 	// Forward to the "designated" initialization method
-	_num = 1;
+	//_num = 1;
+	NSLog(@"init");
 	return self;
 }
 */
@@ -67,7 +69,13 @@ static NSNumber *_num;
 	if (self == [NSApplication class]) {
 		// Makes sure this isn't executed more than once
 		_num = 1;
+		NSLog(@"initialize %d ", _num);
 	}
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+	SLOG(@"applicationDidFinishLaunching");
 }
 
 /* kvc method for the 'ready' AppleScript property.
@@ -90,11 +98,11 @@ static NSNumber *_num;
 	SLOG(@"returning application's ready property");
 	
 	/* return always ready */
-	return _num;
+	return [NSNumber numberWithInt:_num];;
 }
 
 - (void) setStatus:(NSNumber*)num {
-	_num = num;
+	_num = num.intValue;
 }
 
 
