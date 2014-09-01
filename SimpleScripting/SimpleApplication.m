@@ -55,6 +55,8 @@
 static int _num = 0;
 
 @implementation NSApplication (SimpleApplication)
+//@synthesize arr = _arr;
+@dynamic arr;
 
 /*
 - (id)init {
@@ -105,5 +107,14 @@ static int _num = 0;
 	_num = num.intValue;
 }
 
+/*
+- (NSArray*) arr {
+	return arr;
+}
+
+- (void) setArr:(NSArray*)a {
+	arr = a;
+}
+*/
 
 @end

@@ -79,6 +79,7 @@
 			<property name="ready" code="Srdy" type="boolean" access="r" description="we're always ready"/>
 				
 			<property name="status" code="Ssta" type="number" access="rw" description="status info"/>
+			<!--property name="arr" code="Sarr" type="array" access="rw" description="array"/-->
 		</class>
 
 	</suite>

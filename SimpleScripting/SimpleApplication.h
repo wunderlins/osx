@@ -51,7 +51,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface NSApplication (SimpleApplication) 
+@interface NSApplication (SimpleApplication) {
+	//NSArray* _arr;
+	//(NSArray*) __weak _arr;
+}
 
 //@property (readwrite) NSNumber *_num;
 
@@ -63,5 +66,7 @@
 	and have not implemented the setter method 'setReady:'. */
 - (NSNumber*) ready;
 @property NSNumber* status;
+//@property (readwrite) NSArray* _arr;
+@property (weak) NSMutableArray *arr;
 
 @end
