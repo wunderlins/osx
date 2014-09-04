@@ -10,9 +10,19 @@
 
 int main(int argc, const char * argv[])
 {
+	/*
+	//@autoreleasepool {
+		Car *honda = [[Car alloc] init];
+		[honda startEngine];
+		NSLog(@"Running: %d", honda.running);
+		honda.running = NO;
+	//}
+	*/
+	
 	printf("Hello C\n");
 	// insert code here...
 	CFShow(CFSTR("Hello, World!\n"));
+		
 	return 0;
 }
 

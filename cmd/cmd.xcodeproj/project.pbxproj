@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC28A3D819B750800043AE7A /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = DC28A3D719B750800043AE7A /* Car.m */; };
+		DC28A3DA19B7526F0043AE7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC28A3D919B7526F0043AE7A /* Foundation.framework */; };
 		DC93F15A19AFA61F00159DC4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC93F15919AFA61F00159DC4 /* CoreFoundation.framework */; };
 		DC93F15D19AFA61F00159DC4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DC93F15C19AFA61F00159DC4 /* main.c */; };
 		DC93F15F19AFA61F00159DC4 /* cmd.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC93F15E19AFA61F00159DC4 /* cmd.1 */; };
@@ -26,6 +28,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC28A3D619B750800043AE7A /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		DC28A3D719B750800043AE7A /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		DC28A3D919B7526F0043AE7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC93F15619AFA61F00159DC4 /* cmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cmd; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC93F15919AFA61F00159DC4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		DC93F15C19AFA61F00159DC4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
@@ -37,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC28A3DA19B7526F0043AE7A /* Foundation.framework in Frameworks */,
 				DC93F15A19AFA61F00159DC4 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +70,7 @@
 		DC93F15819AFA61F00159DC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC28A3D919B7526F0043AE7A /* Foundation.framework */,
 				DC93F15919AFA61F00159DC4 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
@@ -73,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				DC93F15C19AFA61F00159DC4 /* main.c */,
+				DC28A3D619B750800043AE7A /* Car.h */,
+				DC28A3D719B750800043AE7A /* Car.m */,
 				DC93F15E19AFA61F00159DC4 /* cmd.1 */,
 			);
 			path = cmd;
@@ -129,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC28A3D819B750800043AE7A /* Car.m in Sources */,
 				DC93F15D19AFA61F00159DC4 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +249,7 @@
 				DC93F16419AFA61F00159DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
