@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StreetLegal.h"
 
-@interface Car : NSObject
+@interface Car : NSObject <StreetLegal>
 
 @property (getter=isRunning, readonly) BOOL running;
 

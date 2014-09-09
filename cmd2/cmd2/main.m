@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StreetLegal.h"
 #import "Car.h"
 #import "Bicycle.h"
 
@@ -19,6 +20,17 @@ int main(int argc, const char * argv[])
 		[bike signalLeftTurn];
 		[bike signalStop];
 		[bike lockToStructure:nil];
+		
+		id <StreetLegal> mysteryVehicle = [[Car alloc] init];
+		mysteryVehicle = bike;
+		
+		[mysteryVehicle signalStop];
+		mysteryVehicle = [[Car alloc] init];
+		
+		SEL sel = @selector(startEngine);
+		
+		[mysteryVehicle performSelector:sel];
+		
 	}
 	
 	/*

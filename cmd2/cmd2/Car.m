@@ -13,10 +13,23 @@
 @synthesize running = _running;    // Optional for Xcode 4.4+
 
 - (void)startEngine {
+	NSLog(@"Vrooom");
 	_running = YES;
 }
 - (void)stopEngine {
 	_running = NO;
+}
+
+- (void)signalStop {
+	NSLog(@"Bending left arm downwards");
+}
+
+- (void)signalLeftTurn {
+	NSLog(@"Extending left arm outwards");
+}
+
+- (void)signalRightTurn {
+	NSLog(@"Bending left arm upwards");
 }
 
 @end
